@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.navContainer a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.mainNetflixContainer {
+    /* border: 2px solid red; */
+    /* padding: 0rem 2rem; */
+    position: relative;
+}
+
+.backgroundContainer {
+    background-image: url(./BannerBackground.jpg);
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+
+.pinkoverlay {
+    background-color: rgba(104, 3, 20, 0.404);
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainer {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0rem 2rem;
+}
+
+nav {
+    /* border: 2px solid green; */
+    height: 20vh;
+    position: fixed;
+    z-index: 10000;
+}
+
+.upperNavbarSection {
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+}
+
+.upperNavbarLeftSection {
+    /* border: 2px solid red; */
+    width: 50%;
+}
+
+.NetflixLogo {
+    width: 31%;
+}
+
+.upperNavbarRightSection {
+    /* border: 2px solid green; */
+    width: 50%;
+}
+
+.navBarButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.languageButton {
+    display: flex;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    outline: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.signInButton {
+    background-color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.languageButton p {
+    margin-left: 5px;
+}
+
+.lowerNavbarSection {
+    /* border: 2px solid red; */
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.menuList {
+    /* border: 2px solid green; */
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(7px);
+    height: 7vh;
+}
+
+.menuList li {
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sectionsContainer {
+    margin-top: 20vh;
+}
+
+.bannerSection {
+    /* border: 2px solid red; */
+    height: 90vh;
+    background-image: url(./BannerBackground.jpg);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    /* margin-top: 2rem; */
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.7),
+            black);
+    border-radius: 20px;
+}
+
+.bannerContainer {
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContainer h2 {
+    /* border: 2px solid green; */
+    font-size: 4rem;
+    width: 50%;
+    text-align: center;
+}
+
+.bannerContainer h4 {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.bannerContainer p {
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.inputContainer {
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.EmailInputBox {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 1px solid white;
+    outline: none;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.EmailInputBox::placeholder {
+    color: white;
+}
+
+.getStartedButton {
+    width: 30%;
+    background-color: red;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.carouselSection,
+.planSection,
+.reasonToJoinSection,
+.faqSection {
+    /* border: 2px solid red; */
+    color: white;
+}
+
+.carouselSection h2,
+.planSection h2,
+.reasonToJoinSection h2,
+.faqSection h2 {
+    /* border: 2px solid red; */
+    margin-left: 5rem;
+    font-size: 2.5rem;
+}
+
+.carouselCardContainer,
+.plansContainer,
+.reasonToJoinContainer,
+.faqCardsContainer,
+.getStartedContainer {
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+.carouselCard {
+    /* border: 2px solid yellow; */
+    width: 12%;
+    height: 38vh;
+    border-radius: 20px;
+    position: relative;
+}
+
+.carouselNumberContainer {
+    position: absolute;
+    left: -20px;
+}
+
+.carouselNumberContainer span {
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+    text-shadow: 0, 0, 1.5rem, rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+}
+
+.carouselImageContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.carouselImageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.planCard,
+.reasonToJoinCard {
+    border: 2px solid rgba(255, 255, 255, 0.372);
+    height: 38vh;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+    border-radius: 20px;
+}
+
+.planCard1 {
+    background: linear-gradient(149deg,
+            #1c4072 6.96%,
+            #172b47 40.17%,
+            #120c1f 73.39%);
+}
+
+.planCard2 {
+    background: linear-gradient(149deg,
+            #1d529d 6.96%,
+            #233371 40.17%,
+            #120c1f 73.39%);
+}
+
+.planCard3 {
+    background: linear-gradient(149deg,
+            #792a95 6.96%,
+            #38216c 40.17%,
+            #120c1f 73.39%);
+}
+
+.planCard4 {
+    background: linear-gradient(149deg,
+            #922556 6.96%,
+            #391945 40.17%,
+            #120c1f 73.39%);
+}
+
+.planCard h2 {
+    margin-left: 0;
+    font-size: 1.5rem;
+}
+
+.planCard h4 {
+    font-size: 1.3rem;
+}
+
+.planCard p {
+    font-size: 1rem;
+}
+
+.reasonToJoinCard {
+    border: none;
+    background: rgb(47, 47, 47);
+    height: 38vh;
+}
+
+.reasonToJoinCard h2 {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.reasonToJoinCard p {
+    font-size: 0.9rem;
+}
+
+.reasonLowerPart {
+    display: flex;
+    justify-content: end;
+}
+
+.reasonLowerPart svg {
+    height: 50px;
+    width: 50px;
+
+}
+
+.faqCardsContainer {
+    flex-direction: column;
+}
+
+.faqCard {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.faqQuestion,
+.faqAnswer {
+    padding: 2rem;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    margin-bottom: 20px;
+    background-color: #2e2e2e;
+    font-size: 1.2rem;
+}
+
+.faqQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqQuestion span {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.faqAnswer {
+    display: none;
+}
+
+.faqQuestion:hover {
+    cursor: pointer;
+}
+
+.faqQuestion:hover+.faqAnswer {
+    display: block;
+    cursor: pointer;
+}
+
+
+.getStartedSection {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.getStartedSection p {
+    margin-bottom: 1rem;
+}
+
+footer {
+    /* border: 2px solid red; */
+    /* background-color: #141414; Black background */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer p, footer ul {
+    margin: 20px;
+}
+
+footer ul {
+    list-style: none; /* No bullet points */
+    padding: 20px;
+}
+
+footer a {
+    color: white; /* Link color */
+     /* Remove underline */
+}
+
+
+
+footer select {
+    background-color: transparent; /* Match footer background */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+}
+.ulSection{
+    display: flex;
+   
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.ulSection li{
+    margin-top: 2rem;
+}
